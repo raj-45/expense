@@ -67,7 +67,7 @@ export default function ExpenseForm() {
     </label>
     <label>
       Comment:
-      <input type="text" placeholder="Comment" id="comment" onChange={(e) =>handleChange('comment',event.target.value)}></input>
+      <input type="text" placeholder="Comment" id="comment" onChange={(e) =>handleChange('comment',e.target.value)}></input>
     </label>
     <button onClick={handleSubmit}>Submit</button>
 
