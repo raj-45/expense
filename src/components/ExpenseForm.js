@@ -65,6 +65,10 @@ export default function ExpenseForm() {
       </select>
       {inputBox ? <input type ="text" placeholder="Name" id='Owe_to' onChange={(e)=>handleOwe('Owe_to',e.target.value)}/> : null}
     </label>
+    <label>
+      Comment:
+      <input type="text" placeholder="Comment" id="comment" onChange={(e) =>handleChange('comment',event.target.value)}></input>
+    </label>
     <button onClick={handleSubmit}>Submit</button>
 
     </form>
