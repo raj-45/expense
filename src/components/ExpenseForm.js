@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {useDispatch} from 'react-redux'
+//import {useDispatch} from 'react-redux'
 
 export default function ExpenseForm() {
   const [form, setForm ] = useState({})
@@ -18,7 +18,7 @@ export default function ExpenseForm() {
     setField(field,value);
   }
 
-  const dispatch = useDispatch();
+ // const dispatch = useDispatch();
 
   function handleChange(event,field) {
     const getOption = event.target.value;
@@ -34,7 +34,7 @@ export default function ExpenseForm() {
   const handleSubmit = e =>{
     e.preventDefault()
     console.log(form)
-    dispatch(registerUser(form))
+    //dispatch(registerUser(form))
   }
 
   return (
